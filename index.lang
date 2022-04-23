@@ -1,0 +1,41 @@
+@ This is a language I coded for myself. Here's a basic example of things you can do at the moment.
+
+@ SET [variable name] = string (requires quotation marks!)
+@ Sets a variable, quite easy to understand
+
+SET coolVariable = "The quick brown fox jumped over the lazy dog."
+SET seperator = "======================================="
+
+@ CONSOLE [variable name or string (requires quotation marks!)]
+@ Print something to console.
+
+CONSOLE coolVariable
+CONSOLE "Wow that was really cool!"
+
+CONSOLE seperator
+
+@ INPUT [variable name] = [variable name or string]
+@ Ask for user input.
+
+INPUT coolInput = "What is your favourite number?"
+
+@ STDOUT [variable name or string]
+@ Print something to console without a line break afterwards.
+@ NOTE: do not confuse this for CONSOLE! STDOUT will print without a line break. You can use this with CONSOLE too, as in the example below!
+
+STDOUT coolInput
+CONSOLE " is your favourite number? Woah that's so cool!"
+
+CONSOLE seperator
+
+@ ERROR [variable name or string]
+@ Makes your text red. So cool.
+
+ERROR "Uh oh, looks like there was an error!"
+
+CONSOLE seperator
+
+@ ERRORANDKILL [variable name or string]
+@ Makes your text red, but also kills the process. Even cooler.
+
+ERRORANDKILL "If you add any more lines after this one they won't execute! Very cool."
